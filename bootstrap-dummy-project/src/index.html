@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fischhaus am Hafen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            padding: 7rem 0 5rem 0;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 2rem 2rem;
+        }
+
+        .hero h1,
+        .hero p {
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .card {
+            border-radius: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-img {
+            max-width: 350px;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        footer {
+            letter-spacing: 1px;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 500;
+        }
+
+        .navbar-brand img {
+            height: 36px;
+            margin-right: 10px;
+        }
+
+        .badge-info {
+            font-size: 1rem;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 999;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+        <a class="navbar-brand font-weight-bold d-flex align-items-center" href="#">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/fish-food.png" alt="Logo">
+            Fischhaus am Hafen
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#restaurant">Restaurant</a></li>
+                <li class="nav-item"><a class="nav-link" href="#verkauf">Fischverkauf</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero text-center">
+        <h1 class="display-3 font-weight-bold">Fischhaus am Hafen</h1>
+        <p class="lead mb-0">Frischer Fisch – Restaurant & Verkauf direkt am Wasser</p>
+        <a href="#restaurant" class="btn btn-lg btn-light mt-4 shadow rounded-pill px-4">Jetzt entdecken <span
+                class="ml-2">&#8595;</span></a>
+    </header>
+
+    <div class="container">
+        <!-- Restaurant -->
+        <h2 id="restaurant" class="section-title text-center">Unser Restaurant</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top" alt="Lachsfilet">
+                    <div class="card-body">
+                        <h5 class="card-title">Gegrilltes Lachsfilet <span class="badge badge-success">Beliebt</span>
+                        </h5>
+                        <p class="card-text">Saftig gegrillt, serviert mit frischen Kräutern und Beilagen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top" alt="Backfisch">
+                    <div class="card-body">
+                        <h5 class="card-title">Backfisch & Kartoffelsalat</h5>
+                        <p class="card-text">Knusprig gebackener Fisch mit hausgemachtem Kartoffelsalat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top" alt="Fischsuppe">
+                    <div class="card-body">
+                        <h5 class="card-title">Fischsuppe norddeutscher Art</h5>
+                        <p class="card-text">Herzhafte Suppe mit verschiedenen Fischsorten und Gemüse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top" alt="Matjes">
+                    <div class="card-body">
+                        <h5 class="card-title">Matjes „Hausfrauen Art“</h5>
+                        <p class="card-text">Milder Matjes mit Apfel, Zwiebeln und Sahnesauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top" alt="Garnelenpfanne">
+                    <div class="card-body">
+                        <h5 class="card-title">Garnelenpfanne mit Knoblauch</h5>
+                        <p class="card-text">Frische Garnelen, gebraten mit Knoblauch und Kräutern.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                        class="card-img-top" alt="Fischplatte">
+                    <div class="card-body">
+                        <h5 class="card-title">Fischplatte für zwei <span class="badge badge-primary">Tipp</span></h5>
+                        <p class="card-text">Verschiedene Spezialitäten zum Teilen – perfekt für Genießer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-5">
+            <span class="badge badge-info p-3 rounded-pill shadow-sm">Auch vegetarische Alternativen & Beilagen
+                erhältlich!</span>
+        </div>
+
+        <!-- Fischverkauf -->
+        <h2 id="verkauf" class="section-title text-center">Fischverkauf</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 p-3">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+                        alt="Fischtheke" class="img-fluid rounded shadow-sm mb-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Lachs (frisch & geräuchert)</li>
+                        <li class="list-group-item">Forelle (frisch & geräuchert)</li>
+                        <li class="list-group-item">Makrele (geräuchert)</li>
+                        <li class="list-group-item">Heilbutt</li>
+                        <li class="list-group-item">Seelachs</li>
+                        <li class="list-group-item">Scholle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 p-3">
+                    <img src="https://images.unsplash.com/photo-1505245208761-ba872912fac0?auto=format&fit=crop&w=600&q=80"
+                        alt="Fischverkauf" class="img-fluid rounded shadow-sm mb-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Hering</li>
+                        <li class="list-group-item">Matjes</li>
+                        <li class="list-group-item">Garnelen</li>
+                        <li class="list-group-item">Krabben</li>
+                        <li class="list-group-item">Muscheln (je nach Saison)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galerie -->
+        <h2 id="galerie" class="section-title text-center">Galerie</h2>
+        <div class="row mb-5">
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+                        alt="Hafen" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                        alt="Meer" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                        alt="Fischgericht" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontakt -->
+        <section id="kontakt" class="text-center my-5">
+            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
+                alt="Hafen" class="contact-img mb-4">
+            <h2 class="section-title">Kontakt & Öffnungszeiten</h2>
+            <p>
+                <strong>Adresse:</strong> Hafenstraße 1, 12345 Küstenstadt<br>
+                <strong>Telefon:</strong> <a href="tel:01234567890" class="text-primary font-weight-bold">01234 /
+                    567890</a><br>
+                <strong>Öffnungszeiten:</strong> Mo–Sa 10:00–20:00 Uhr, So 12:00–18:00 Uhr
+            </p>
+            <a href="mailto:info@fischhausamhafen.de" class="btn btn-outline-primary rounded-pill px-4 mt-3">E-Mail
+                schreiben</a>
+        </section>
+    </div>
+
+    <footer class="bg-primary text-white text-center py-3 mt-4 rounded-top">
+        &copy; 2025 Fischhaus am Hafen
+    </footer>
+
+    <!-- Scroll-to-top Button -->
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        class="btn btn-primary scroll-top rounded-circle shadow">
+        <span style="font-size:1.5rem;">&#8679;</span>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Show scroll-to-top button
+        window.addEventListener('scroll', function () {
+            document.querySelector('.scroll-top').style.display = window.scrollY > 400 ? 'block' : 'none';
+        });
+    </script>
+</body>
+
+</html>
