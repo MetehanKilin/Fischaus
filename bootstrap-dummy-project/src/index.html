@@ -96,6 +96,8 @@
                 <li class="nav-item"><a class="nav-link" href="#verkauf">Fischverkauf</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
                 <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="#datenschutz">Datenschutzerklärung</a></li>
+                <li class="nav-item"><a class="nav-link" href="#impressum">Impressum</a></li>
             </ul>
         </div>
     </nav>
@@ -110,7 +112,14 @@
     <div class="container">
         <!-- Restaurant -->
         <h2 id="restaurant" class="section-title text-center">Unser Restaurant</h2>
-        <div class="row">
+        <p class="text-center lead mb-3">
+            Erleben Sie einen Einblick in unser Restaurant und unsere frische Fischküche im Video:
+        </p>
+        <div class="d-flex justify-content-center my-4 mb-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xOhKe0VC9Zw" title="YouTube video"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="row mt-4">
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
                     <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
@@ -249,6 +258,67 @@
             <a href="mailto:info@fischhausamhafen.de" class="btn btn-outline-primary rounded-pill px-4 mt-3">E-Mail
                 schreiben</a>
         </section>
+
+        <!-- Datenschutzerklärung -->
+        <section id="datenschutz" class="my-5">
+            <h2 class="section-title text-center">Datenschutzerklärung</h2>
+            <div class="card shadow-sm p-4 mx-auto" style="max-width: 900px;">
+                <h5>1. Allgemeine Hinweise</h5>
+                <p>
+                    Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten
+                    daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).
+                </p>
+                <h5>2. Kontakt mit uns</h5>
+                <p>
+                    Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit uns aufnehmen, werden Ihre
+                    angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate
+                    bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                </p>
+                <h5>3. Server-Logfiles</h5>
+                <p>
+                    Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
+                    Server-Logfiles, die Ihr Browser automatisch an uns übermittelt. Dies sind z.B. Browsertyp,
+                    Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage. Diese
+                    Daten sind nicht bestimmten Personen zuordenbar.
+                </p>
+                <h5>4. Cookies</h5>
+                <p>
+                    Unsere Website verwendet keine Cookies, außer technisch notwendige für die Funktion der Seite.
+                </p>
+                <h5>5. Ihre Rechte</h5>
+                <p>
+                    Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung,
+                    Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer
+                    Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Aufsichtsbehörde beschweren.
+                </p>
+                <h5>6. Kontakt zum Datenschutz</h5>
+                <p>
+                    Für Fragen zum Datenschutz wenden Sie sich bitte an: <a
+                        href="mailto:info@fischhausamhafen.de">info@fischhausamhafen.de</a>
+                </p>
+                <p class="text-muted small mb-0">Stand: Juni 2025</p>
+            </div>
+        </section>
+
+        <!-- Impressum -->
+        <section id="impressum" class="my-5">
+            <h2 class="section-title text-center">Impressum</h2>
+            <div class="card shadow-sm p-4 mx-auto" style="max-width: 900px;">
+                <h5>Name und Rechtsform</h5>
+                <p>Max Mustermann, Einzelunternehmer</p>
+                <h5>Anschrift</h5>
+                <p>Hafenstraße 1<br>12345 Küstenstadt</p>
+                <h5>Telefonnummer und E-Mail</h5>
+                <p>Telefon: <a href="tel:01234567890">01234 / 567890</a><br>
+                    E-Mail: <a href="mailto:info@fischhausamhafen.de">info@fischhausamhafen.de</a></p>
+                <h5>Verantwortlicher für Inhalte</h5>
+                <p>Max Mustermann, Anschrift wie oben</p>
+                <h5>Handelsregistereintrag</h5>
+                <p>Amtsgericht Küstenstadt, HRA 12345</p>
+                <h5>Umsatzsteuer-ID</h5>
+                <p>DE123456789</p>
+            </div>
+        </section>
     </div>
 
     <footer class="bg-primary text-white text-center py-3 mt-4 rounded-top">
@@ -265,11 +335,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Show scroll-to-top button
-        window.addEventListener('scroll', function () {
-            document.querySelector('.scroll-top').style.display = window.scrollY > 400 ? 'block' : 'none';
-        });
-    </script>
-</body>
-
-</html>
+        //
