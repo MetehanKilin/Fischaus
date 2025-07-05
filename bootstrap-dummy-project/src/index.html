@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fischhaus am Hafen</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -13,16 +14,44 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-            color: #fff;
-            padding: 7rem 0 5rem 0;
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-            border-radius: 0 0 2rem 2rem;
+            background: url('images/Background2.jpg') center/cover no-repeat;
+            color: #222;
+            /* dunkleres Grau für bessere Lesbarkeit auf hellem Hintergrund */
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 0 2.5rem 2.5rem;
+            position: relative;
+            filter: saturate(0.95) brightness(0.95);
         }
 
         .hero h1,
         .hero p {
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            color: #222;
+            /* dunkles Grau für gute Lesbarkeit */
+            text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
+        }
+
+        .hero .lead {
+            color: #222;
+            /* ebenfalls dunkles Grau für den Untertitel */
+            text-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 5rem 0 3rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
         }
 
         .section-title {
@@ -104,15 +133,20 @@
     </nav>
 
     <header class="hero text-center">
-        <h1 class="display-3 font-weight-bold">Fischhaus am Hafen</h1>
-        <p class="lead mb-0">Frischer Fisch – Restaurant & Verkauf direkt am Bodensee</p>
-        <a href="#restaurant" class="btn btn-lg btn-light mt-4 shadow rounded-pill px-4">Jetzt entdecken <span
-                class="ml-2">&#8595;</span></a>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-3">
+            <img src="images/Logo.jpg" alt="Logo"
+                style="height:60px; width:60px; border-radius:50%; object-fit:cover; margin-right:16px;">
+            <h1 class="display-3 font-weight-bold mb-0">Fischhaus am Hafen</h1>
+        </div>
+        <h1 class="lead font-weight-bold mb-0">Frischer Fisch – Restaurant & Verkauf direkt am Bodensee</h1>
+        <a href="#restaurant" class="btn btn-lg btn-light mt-4 shadow rounded-pill px-4">
+            Jetzt entdecken <span class="ml-2">&#8595;</span>
+        </a>
     </header>
 
     <div class="container">
         <!-- Restaurant -->
-        <h2 id="restaurant" class="section-title text-center">Unser Restaurant</h2>
+        <h2 id="restaurant" class="section-title text-center">Willkommen im Fischhaus</h2>
         <p class="text-center lead mb-3">
             Erleben Sie einen Einblick in unser Restaurant und unsere frische Fischküche im Video:
         </p>
@@ -120,11 +154,17 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xOhKe0VC9Zw" title="YouTube video"
                 frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="row mt-4">
+        <h2 id="restaurant" class="section-title text-center">Unser Restaurant</h2>
+        <p class="text-center mb-4">
+            In unserem Restaurant genießen Sie täglich fangfrischen Fisch aus dem Bodensee, knusprigen Backfisch, feine
+            Fischsuppen sowie saisonale Spezialitäten. Dazu bieten wir hausgemachte Beilagen, vegetarische Alternativen
+            und eine Auswahl an regionalen Weinen und Getränken. Lassen Sie sich von unserer Küche und dem Blick auf den
+            Hafen verwöhnen!
+            <!-- Bereiche -->
+        <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
-                    <img src="
-                        class=" card-img-top" alt="Lachsfilet">
+                    <img src="images/UnserRestaurant/Fischfilet.jpg" class=" card-img-top" alt="Lachsfilet">
                     <div class="card-body">
                         <h5 class="card-title">Gegrilltes Lachsfilet <span class="badge badge-success">Beliebt</span>
                         </h5>
@@ -134,7 +174,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
-                    <img src="images/Backfisch.jpg" class="card-img-top" alt="Backfisch">
+                    <img src="images/UnserRestaurant/Backfisch.jpg" class="card-img-top" alt="Backfisch">
                     <div class="card-body">
                         <h5 class="card-title">Backfisch & Kartoffelsalat</h5>
                         <p class="card-text">Knusprig gebackener Fisch mit hausgemachtem Kartoffelsalat.</p>
@@ -163,7 +203,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
-                    <img src="" class="card-img-top" alt="Garnelenpfanne">
+                    <img src="images/UnserRestaurant/Garnelen.jpg" class="card-img-top" alt="Garnelenpfanne">
                     <div class="card-body">
                         <h5 class="card-title">Garnelenpfanne mit Knoblauch</h5>
                         <p class="card-text">Frische Garnelen, gebraten mit Knoblauch und Kräutern.</p>
@@ -172,7 +212,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
-                    <img src="" class="card-img-top" alt="Fischplatte">
+                    <img src="images/UnserRestaurant/FischPlatte.jpg" class="card-img-top" alt="Fischplatte">
                     <div class="card-body">
                         <h5 class="card-title">Fischplatte für zwei <span class="badge badge-primary">Tipp</span></h5>
                         <p class="card-text">Verschiedene Spezialitäten zum Teilen – perfekt für Genießer.</p>
@@ -187,6 +227,11 @@
 
         <!-- Fischverkauf -->
         <h2 id="verkauf" class="section-title text-center">Fischverkauf</h2>
+        <p class="text-center mb-4">
+            In unserem Fischverkauf bieten wir Ihnen täglich eine große Auswahl an frischem und geräuchertem Fisch aus
+            dem Bodensee sowie Meeresdelikatessen. Entdecken Sie unsere wechselnden Angebote und lassen Sie sich von der
+            Qualität und Frische unserer Produkte überzeugen – perfekt für den Genuss zu Hause!
+        </p>
         <div class="row">
             <div class="col-md-6 mb-4">
                 <div class="card shadow-sm h-100 p-3">
@@ -215,22 +260,65 @@
             </div>
         </div>
 
+        <!-- Zusatzleistungen einfügen -->
+
+        <h3 class="section-title text-center mt-4">Mobiler Eisstand & Kaffeemaschine</h3>
+        <p class="text-center mb-4">
+            Unser mobiler Eisstand mit moderner Kaffeemaschine macht Ihr Event zum Highlight: Genießen Sie frische
+            Eisspezialitäten und aromatischen Kaffee direkt vor Ort – perfekt für Firmenfeiern, Hochzeiten oder private
+            Feste. Buchen Sie uns für Ihre Veranstaltung! Wir beraten Sie individuell und sorgen für ein unvergessliches
+            Genuss-Erlebnis für Sie und Ihre Gäste.
+        </p>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/EisStand/Eis.jpg" class="card-img-top" alt="Mobiler Eisstand">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobiler Eisstand</h5>
+                        <p class="card-text">Frische Eisspezialitäten in vielen Sorten – direkt vor Ort für Ihr Event
+                            serviert. Ein Highlight für Groß und Klein!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/EisStand/KaffeMaschine.jpg" class="card-img-top" alt="Kaffee & Espresso">
+                    <div class="card-body">
+                        <h5 class="card-title">Kaffee & Espresso</h5>
+                        <p class="card-text">Frisch gebrühter Kaffee und aromatischer Espresso – direkt vor Ort für Sie
+                            und Ihre Gäste zubereitet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/EisStand/EisKugel2.jpg" class="card-img-top" alt="Affogato">
+                    <div class="card-body">
+                        <h5 class="card-title">Affogato <span class="badge badge-primary">Tipp</span></h5>
+                        <p class="card-text">Italienisches Dessert: Vanilleeis mit frisch gebrühtem Espresso – ein
+                            Genuss für Kaffee- und Eisliebhaber.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Galerie -->
         <h2 id="galerie" class="section-title text-center">Galerie</h2>
         <div class="row mb-5">
             <div class="col-md-4 mb-3">
                 <div class="card shadow-sm border-0">
-                    <img src="images/strand.jpg" alt="Hafen" class="img-fluid rounded shadow-sm">
+                    <img src="images/Galerie/Hafen.jpg" alt="Hafen" class="img-fluid rounded shadow-sm">
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card shadow-sm border-0">
-                    <img src="images/Deno.jpg" alt="Meer" class="img-fluid rounded shadow-sm">
+                    <img src="images/Galerie/Deno.jpg" alt="Meer" class="img-fluid rounded shadow-sm">
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card shadow-sm border-0">
-                    <img src="images/Fischfilet.jpg" alt="Fischgericht" class="img-fluid rounded shadow-sm">
+                    <img src="images/Galerie/Fischfilet.jpg" alt="Fischgericht" class="img-fluid rounded shadow-sm">
                 </div>
             </div>
         </div>
@@ -268,31 +356,40 @@
             <div class="card shadow-sm p-4 mx-auto" style="max-width: 900px;">
                 <h5>1. Allgemeine Hinweise</h5>
                 <p>
-                    Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten
+                    Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten
+                    Ihre Daten
                     daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).
                 </p>
                 <h5>2. Kontakt mit uns</h5>
                 <p>
-                    Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit uns aufnehmen, werden Ihre
-                    angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate
+                    Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit uns aufnehmen, werden
+                    Ihre
+                    angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen
+                    sechs Monate
                     bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
                 </p>
                 <h5>3. Server-Logfiles</h5>
                 <p>
                     Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
-                    Server-Logfiles, die Ihr Browser automatisch an uns übermittelt. Dies sind z.B. Browsertyp,
-                    Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage. Diese
+                    Server-Logfiles, die Ihr Browser automatisch an uns übermittelt. Dies sind z.B.
+                    Browsertyp,
+                    Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der
+                    Serveranfrage. Diese
                     Daten sind nicht bestimmten Personen zuordenbar.
                 </p>
                 <h5>4. Cookies</h5>
                 <p>
-                    Unsere Website verwendet keine Cookies, außer technisch notwendige für die Funktion der Seite.
+                    Unsere Website verwendet keine Cookies, außer technisch notwendige für die Funktion der
+                    Seite.
                 </p>
                 <h5>5. Ihre Rechte</h5>
                 <p>
-                    Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung,
-                    Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer
-                    Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Aufsichtsbehörde beschweren.
+                    Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung,
+                    Einschränkung,
+                    Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die
+                    Verarbeitung Ihrer
+                    Daten gegen das Datenschutzrecht verstößt, können Sie sich bei der Aufsichtsbehörde
+                    beschweren.
                 </p>
                 <h5>6. Kontakt zum Datenschutz</h5>
                 <p>
@@ -312,7 +409,7 @@
                 <h5>Anschrift</h5>
                 <p> William Graf Platz 4-6<br>78464 Konstanz</p>
                 <h5>Telefonnummer und E-Mail</h5>
-                <p>Telefon: <a href="tel:075318076961">07531 / 8076961</a><br>
+                <p>Telefon: <a href="tel:075318076961">+41 7531 / 8076961</a><br>
                     E-Mail: <a href="mailto:fisch@fischhaus-konstanz.de">fisch@fischhaus-konstanz.de</a></p>
                 <h5>Umsatzsteuer-ID</h5>
                 <p>09257/49816</p>
