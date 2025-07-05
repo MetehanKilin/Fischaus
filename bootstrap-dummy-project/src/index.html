@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fischhaus am Hafen</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/Logo.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -16,7 +16,6 @@
         .hero {
             background: url('images/Background2.jpg') center/cover no-repeat;
             color: #222;
-            /* dunkleres Grau für bessere Lesbarkeit auf hellem Hintergrund */
             min-height: 60vh;
             display: flex;
             flex-direction: column;
@@ -30,28 +29,92 @@
         .hero h1,
         .hero p {
             color: #222;
-            /* dunkles Grau für gute Lesbarkeit */
             text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
         }
 
         .hero .lead {
             color: #222;
-            /* ebenfalls dunkles Grau für den Untertitel */
             text-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
         }
 
+        .navbar-brand img,
+        .hero img {
+            height: 52px !important;
+            width: 52px !important;
+            margin-right: 10px !important;
+        }
+
+        /* Responsive Anpassungen für Hero und Navbar */
         @media (max-width: 768px) {
-            .hero {
-                padding: 5rem 0 3rem 0;
+
+            .hero h1,
+            .display-3 {
+                font-size: 1.5rem !important;
             }
 
-            .hero h1 {
-                font-size: 2.2rem;
+            .hero .lead {
+                font-size: 1rem;
             }
 
-            .hero p {
+            .navbar-brand {
                 font-size: 1.1rem;
             }
+
+            .navbar-brand img,
+            .hero img {
+                height: 28px !important;
+                width: 28px !important;
+                margin-right: 8px !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .hero h1,
+            .display-3 {
+                font-size: 1.1rem !important;
+            }
+
+            .hero .lead {
+                font-size: 0.95rem;
+            }
+
+            .navbar-brand {
+                font-size: 0.95rem;
+            }
+
+            .navbar-brand img {
+                height: 24px;
+                margin-right: 6px;
+            }
+
+            .hero img {
+                height: 24px !important;
+                width: 24px !important;
+                margin-right: 6px !important;
+            }
+        }
+
+        /* Hamburger-Button immer rechts */
+        .navbar-toggler {
+            margin-left: auto;
+        }
+
+        .navbar .navbar-toggler {
+            position: absolute;
+            right: 1rem;
+            top: 0.75rem;
+        }
+
+        .navbar .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            white-space: nowrap;
+        }
+
+        .navbar .navbar-collapse {
+            text-align: right;
         }
 
         .section-title {
@@ -160,7 +223,7 @@
             Fischsuppen sowie saisonale Spezialitäten. Dazu bieten wir hausgemachte Beilagen, vegetarische Alternativen
             und eine Auswahl an regionalen Weinen und Getränken. Lassen Sie sich von unserer Küche und dem Blick auf den
             Hafen verwöhnen!
-            <!-- Bereiche -->
+        </p>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
@@ -325,8 +388,6 @@
 
         <!-- Kontakt -->
         <section id="kontakt" class="text-center my-5">
-            <!-- <img src=""
-                alt="Hafen" class="contact-img mb-4"> -->
             <h2 class="section-title">Kontakt & Öffnungszeiten</h2>
             <p>
                 <strong>Einzelunternehmen:</strong> Arzu Skorput<br>
@@ -348,7 +409,6 @@
                 Instagram
             </a>
         </section>
-
 
         <!-- Datenschutzerklärung -->
         <section id="datenschutz" class="my-5">
@@ -431,4 +491,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        //
+        // Optional: Scroll-to-top Button anzeigen
+        window.addEventListener('scroll', function () {
+            const btn = document.querySelector('.scroll-top');
+            if (window.scrollY > 200) {
+                btn.style.display = 'block';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
