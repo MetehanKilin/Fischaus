@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98ac4193-dd2f-46e5-8eae-8634d6bb01a2" name="Changes" comment="">
+    <list default="true" id="98ac4193-dd2f-46e5-8eae-8634d6bb01a2" name="Changes" comment="hotfix.&#10;- close navbar after link">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap-dummy-project/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap-dummy-project/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,14 @@
       <option name="presentableId" value="Default" />
       <updated>1763220047435</updated>
     </task>
+    <task id="LOCAL-00001" summary="hotfix.&#10;- close navbar after link">
+      <created>1763223139322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763223139322</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -53,5 +62,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hotfix.&#10;- close navbar after link" />
+    <option name="LAST_COMMIT_MESSAGE" value="hotfix.&#10;- close navbar after link" />
   </component>
 </project>
